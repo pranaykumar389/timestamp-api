@@ -1,0 +1,25 @@
+{
+  "name": "timestamp-api",
+  "version": "1.0.0",
+  "description": "\"This project is a part of Freecodecamp Backend projects\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "\"Pranay Kumar\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.7.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranaykumar389/timestamp-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pranaykumar389/timestamp-api/issues"
+  },
+  "homepage": "https://github.com/pranaykumar389/timestamp-api#readme"
+}
