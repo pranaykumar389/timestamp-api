@@ -4,6 +4,6 @@ var express = require('express'),
     time = require('../models/time');
 
 timeRoute.get('/', time.list)
-    .get('/:id', time.get);
+    .get('/:id', time.get);    
 
 module.exports = timeRoute;

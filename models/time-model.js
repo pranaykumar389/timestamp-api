@@ -5,11 +5,14 @@ var mongoose = require('mongoose'),
 (function() {
     var timeSchema = new Schema({
         unix: {
-            type: String
+            type: Number,
+            default: null
         },
         natural: {
-            type: Date
-        }
+            type: String,
+            default: null
+        },
+        _id: false
     });
 
     mongoose.model('Timestamp', timeSchema);

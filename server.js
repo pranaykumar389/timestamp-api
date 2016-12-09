@@ -2,19 +2,16 @@
 
 var express = require('express'),
     app = express(),
+    bodyParser = require('body-parser'),
     mongoose = require('mongoose');
-
-//Mongoose Connection
-mongoose.connect('mongodb://localhost/timestamp');
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'Connection error'));
-db.once('open', function() {
-    console.log('Connection Established to timestamp');
-});
 
 
 //Mongoose Model require
 require('./models/time-model');
+
+//bodyParser
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //Routes
 var timeRoute = require('./routes/time-route');
