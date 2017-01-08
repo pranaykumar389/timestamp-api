@@ -5,6 +5,8 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     mongoose = require('mongoose');
 
+//Port Setup
+var port = process.env.PORT || 8080;
 
 //Mongoose Model require
 require('./models/time-model');
@@ -20,6 +22,6 @@ app.use('/', timeRoute);
 //Views
 app.use('/', express.static('views'));
 
-app.listen(8080, function() {
-   console.log('Listening on port 8080!');
+app.listen(port, function() {
+   console.log('Server Listening on port ' + port + '!');
 });
